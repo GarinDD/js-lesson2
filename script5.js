@@ -1,14 +1,15 @@
 
-
 resultSum = 0
-let month = 0
+let mounth = 0
+let sum = 0
+do {
+sum = +prompt("Сколько хочешь откладывать?", sum)
+resultSum += sum
+mounth++
+alert("Молодец ты копишь уже "+mounth + " месяцев")
+y =  confirm("Будешь ещё откладывать в следующем месяце Да/нет?")    
 
-do {let sum = +prompt("Сколько хочешь откладывать?", sum)
-    resultSum += sum
-    month++
-    alert("Молодец ты копишь уже"+month +" месяцев")
- y =   confirm("Будешь еще откладывать в следующем месяце Да/нет")
+} 
+while(y == true)
+alert("Ты накопил "+ resultSum + "и держался " + mounth + " месяцев" )
 
-
-} while(y == true)
-alert("Ты накопил "+ resultSum + "и держался" + month +"месяцев")
