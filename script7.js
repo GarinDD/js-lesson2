@@ -20,30 +20,49 @@
 // arr=[1,2,3,4,5]
 // for(i in arr) console.log(i)
 
-for (i = 0; i < 10; i++) {
-    rnd = Math.round(Math.random() * 6) + 1;
-    if (rnd == 4) {
-        alert("Выпало 4");
+// for (i = 0; i < 10; i++) {
+//     rnd = Math.round(Math.random() * 6) + 1;
+//     if (rnd == 4) {
+//         alert("Выпало 4");
         
-        break;
-    };
-    if (rnd == 5) {
-        alert("Выпало 5");
-        continue;
+//         break;
+//     };
+//     if (rnd == 5) {
+//         alert("Выпало 5");
+//         continue;
       
-    };
-    console.log(rnd);
-}
-console.log("Конец")
-Math.max(2,5,6,7,8)
+//     };
+//     console.log(rnd);
+// }
+// console.log("Конец")
+// Math.max(2,5,6,7,8)
 
-function createRandom() {
-   return Math.round(Math.random() * 6) + 1;
-}
-x = createRandom();
-alert(x)
+// function createRandom() {
+//    return Math.round(Math.random() * 6) + 1;
+// }
+// x = createRandom();
+// alert(x)
 
-for(i=i;i<5;i++) {
-    console.log(createRandom())
+// for(i=i;i<5;i++) {
+//     // console.log(createRandom())
+// }
+
+// function sum(a, b) {
+//     console.log( a +b )
+//     return a +b ;
+// }
+// alert(sum(3,5))
+
+counter = 0
+function hi(name, text="Привет") {
+    counter++;
+    alert(name+ ", " +text)
 }
+function showHiCount() {
+    alert("Я поприветствовал " + counter + " человек")
+}
+hi("Вася")
+hi("Петя")
+hi("Настя", "здравствуйте")
+showHiCount()
 
