@@ -24,12 +24,26 @@ for (i = 0; i < 10; i++) {
     rnd = Math.round(Math.random() * 6) + 1;
     if (rnd == 4) {
         alert("Выпало 4");
+        
         break;
     };
     if (rnd == 5) {
         alert("Выпало 5");
         continue;
+      
     };
     console.log(rnd);
 }
 console.log("Конец")
+Math.max(2,5,6,7,8)
+
+function createRandom() {
+   return Math.round(Math.random() * 6) + 1;
+}
+x = createRandom();
+alert(x)
+
+for(i=i;i<5;i++) {
+    console.log(createRandom())
+}
+
